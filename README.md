@@ -4,8 +4,8 @@
 
 Local storage in the browser is handy - you can save data that will persist
 between page refreshes, and maybe avoid making network requests, whether
-that's to let people use it offline, or just to avoid making relatively
-slow request over the network.
+that's to let people use that data offline, or just to avoid making relatively
+slow requests over the network.
 
 HTML5 localStorage is well supported across browsers (http://caniuse.com/#feat=namevalue-storage).
 On the other hand, it's basically just a key/value store for strings (http://diveintohtml5.info/storage.html#methods).
