@@ -16,7 +16,7 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'node_modules/underscore/underscore.js',
-      'simple-local-lists.js',
+      'lister.js',
       'test/*.js'
     ],
 

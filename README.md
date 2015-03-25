@@ -1,6 +1,5 @@
 # lister
 
-
 ## Why does lister exist?
 
 Local storage in the browser is handy - you can save data that will persist
@@ -15,29 +14,36 @@ Lister is a small wrapper around HTML5 localStorage designed for storing
 lists of things - probably objects, probably all identifiable by some id.
 
 Hopefully it's nice to use - I wrote partly as an 'I just want to...' module,
-originally for use in a PhoneGap/Backbone app.
+without making assumptions about other javascript/frameworks.
 
 
 ## How can I use lister?
 
-'''javascript
+Save some items in a list
 
-// save some items in a list
+'''javascript
 var posts = [
   {id:1, title:'First Post'},
   {id:2, title:'Another Post'},
 ]
 lister.set("posts", posts);
+'''
 
-// later, get them out agin...
+Later, get them out again...
+
+'''javascript
 var posts = lister.get("posts"); // returns posts array
+'''
 
+Remove an item by id
 
-// remove an item by id
+'''javascript
 lister.remove("posts", 1);
+'''
 
-// add a new item to a list
+Add a new item to a list
+
+'''javascript
 var new_post = {id:3, title: 'New Post'};
 lister.add("posts", new_post);
-
 '''

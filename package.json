@@ -1,8 +1,8 @@
 {
-  "name": "simple-local-lists",
+  "name": "lister",
   "version": "0.0.1",
   "description": "Save items in lists, in the browser.",
-  "main": "simple-local-lists.js",
+  "main": "lister.js",
   "directories": {
     "test": "test"
   },
