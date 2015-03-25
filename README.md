@@ -21,29 +21,29 @@ without making assumptions about other javascript/frameworks.
 
 Save some items in a list
 
-'''javascript
+```javascript
 var posts = [
   {id:1, title:'First Post'},
   {id:2, title:'Another Post'},
 ]
 lister.set("posts", posts);
-'''
+```
 
 Later, get them out again...
 
-'''javascript
+```javascript
 var posts = lister.get("posts"); // returns posts array
-'''
+```
 
 Remove an item by id
 
-'''javascript
+```javascript
 lister.remove("posts", 1);
-'''
+```
 
 Add a new item to a list
 
-'''javascript
+```javascript
 var new_post = {id:3, title: 'New Post'};
 lister.add("posts", new_post);
-'''
+```
