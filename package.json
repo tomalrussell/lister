@@ -1,0 +1,34 @@
+{
+  "name": "simple-local-lists",
+  "version": "0.0.1",
+  "description": "Save items in lists, in the browser.",
+  "main": "simple-local-lists.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "underscore": "^1.8.2"
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.2.0",
+    "karma-jasmine": "^0.3.5",
+    "karma": "^0.12.31",
+    "karma-firefox-launcher": "^0.1.4"
+  },
+  "scripts": {
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomalrussell/simple-local-lists.git"
+  },
+  "keywords": [
+    "localStorage"
+  ],
+  "author": "Tom Russell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomalrussell/simple-local-lists/issues"
+  },
+  "homepage": "https://github.com/tomalrussell/simple-local-lists"
+}
