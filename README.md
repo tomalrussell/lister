@@ -7,14 +7,14 @@ between page refreshes, and maybe avoid making network requests, whether
 that's to let people use it offline, or just to avoid making relatively
 slow request over the network.
 
-HTML5 localStorage is well supported across browsers. On the other hand, it's
-just a key/value store for strings.
+HTML5 localStorage is well supported across browsers (http://caniuse.com/#feat=namevalue-storage).
+On the other hand, it's basically just a key/value store for strings (http://diveintohtml5.info/storage.html#methods).
 
 Lister is a small wrapper around HTML5 localStorage designed for storing
 lists of things - probably objects, probably all identifiable by some id.
 
-Hopefully it's nice to use - I wrote partly as an 'I just want to...' module,
-without making assumptions about other javascript/frameworks.
+Hopefully it's nice to use - I wrote it as an 'I just want to...' module, hopefully
+without making too many assumptions about other javascript/frameworks.
 
 
 ## How can I use lister?
@@ -47,3 +47,45 @@ Add a new item to a list
 var new_post = {id:3, title: 'New Post'};
 lister.add("posts", new_post);
 ```
+
+## Todo
+
+- check that amd define / commonjs require methods of inclusion both work
+- handle out-of-storage errors
+- remove underscore dependency
+- don't assume that items have an id (and/or make that field name configurable)
+
+
+## Surely this isn't new?
+
+Nope, not at all. Here's Christian Heilmann excited about localStorage,
+writing in 24ways back in 2010: http://24ways.org/2010/html5-local-storage/
+
+### LocalStorage polyfills:
+
+-  Cookie polyfill:
+   https://gist.github.com/remy/350433
+
+-  Non-cookie polyfill:
+   https://github.com/marcuswestin/store.js
+
+### Backbone localStorage adapter:
+https://github.com/jeromegn/Backbone.localStorage
+
+
+### Similar projects:
+
+-  Depot:
+   https://github.com/mkuklis/depot.js
+
+-  Dustbin (with a Riak-inspired interface):
+   http://morgul.github.io/dustbin/
+
+-  Lawnchair (simple json storage):
+   http://brian.io/lawnchair
+
+-  Lockr (with a minimal Redis-style interface):
+   https://github.com/tsironis/lockr
+
+-  BankersBox (with a fuller Redis-style interface):
+   https://github.com/twilio/BankersBox
