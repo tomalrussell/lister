@@ -48,12 +48,12 @@ var new_post = {id:3, title: 'New Post'};
 lister.add("posts", new_post);
 ```
 
-## Todo
 
-- check that amd define / commonjs require methods of inclusion both work
-- handle out-of-storage errors
-- remove underscore dependency
-- don't assume that items have an id (and/or make that field name configurable)
+## Contribution
+
+Feel free to file issues or open pull requests. I'll put issues in the tracker if I think of
+anything.
+
 
 
 ## Surely this isn't new?
