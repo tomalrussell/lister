@@ -10,17 +10,17 @@
     "underscore": "^1.8.2"
   },
   "devDependencies": {
-    "jasmine-core": "^2.2.0",
-    "karma-jasmine": "^0.3.5",
-    "karma": "^0.12.31",
-    "karma-firefox-launcher": "^0.1.4"
+    "jasmine-core": "^4.0.0",
+    "karma": "^6.3.16",
+    "karma-firefox-launcher": "^2.1.2",
+    "karma-jasmine": "^4.0.1"
   },
   "scripts": {
-    "test": "karma start"
+    "test": "karma start --log-level debug --single-run"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tomalrussell/simple-local-lists.git"
+    "url": "https://github.com/tomalrussell/lister.git"
   },
   "keywords": [
     "localStorage"
@@ -28,7 +28,7 @@
   "author": "Tom Russell",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tomalrussell/simple-local-lists/issues"
+    "url": "https://github.com/tomalrussell/lister/issues"
   },
-  "homepage": "https://github.com/tomalrussell/simple-local-lists"
+  "homepage": "https://github.com/tomalrussell/lister"
 }
